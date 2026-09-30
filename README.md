@@ -1,3 +1,6 @@
+##Name: Tusti S
+##SRN: PES1UG24CS505
+
 # Scenario 17 — Wordle
 
 A terminal Wordle-style game with duplicate-letter scoring and guess history.
