@@ -48,12 +48,17 @@ class WordleGame:
                     cells.append(f" {ch} ")
             print("  " + " ".join(cells))
 
+    def colour_word(self, word, fb):
+        return " ".join(
+            f"{self.STYLES[c]} {ch} {self.RESET}" for ch, c in zip(word, fb)
+        )
+
     def show_history(self):
         print("History:")
         if not self.history:
             print("  (no guesses yet)")
         for n, (word, fb) in enumerate(self.history, 1):
-            print(f"  {n}. {word}  {' '.join(fb)}")
+            print(f"  {n}. {self.colour_word(word, fb)}  {' '.join(fb)}")
         self.show_keyboard()
 
     def show_summary(self, outcome):
