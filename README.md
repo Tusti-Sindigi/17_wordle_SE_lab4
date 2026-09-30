@@ -1,5 +1,5 @@
-##Name: Tusti S
-##SRN: PES1UG24CS505
+## Name: Tusti S
+## SRN: PES1UG24CS505
 
 # Scenario 17 — Wordle
 
